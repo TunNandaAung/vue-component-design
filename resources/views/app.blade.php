@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
         
     </head>
-    <body class="font-sans">
+    <body class="font-sans bg-gray-100">
 
 
         <div id="app">
@@ -31,7 +31,7 @@
                             <h5 class="uppercase font-bold mb-5 text-base">The Brand</h5>
                             
                             <ul>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to="/home/logo" exact>Logo</router-link></li>
+                                <li class="text-sm leading-loose"><router-link class="text-black" to="/home/controlled-component" exact>Controlled Component</router-link></li>
                                 <li class="text-sm leading-loose"><router-link class="text-black" to="/home/logo-symbol">Logo Symbols</router-link></li>
                                 <li class="text-sm leading-loose"><router-link class="text-black" to="/home/colors">Colors</router-link></li>
                                 <li class="text-sm leading-loose"><router-link class="text-black" to="/home/typography">Typography</router-link></li>
