@@ -78,15 +78,16 @@
                 <div class="primary flex-1 px-8">
 
                     <router-view></router-view>
+                    <portal-target name="modals"></portal-target>
+  
                 </div>
-
-                </main>
-
-                
-                    
+                </main>                    
             </div>
         </div>
+        
+                
     </body>
+    
 
     <script src=/js/app.js></script>
 </html>

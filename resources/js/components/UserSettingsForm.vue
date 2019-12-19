@@ -3,7 +3,7 @@
     <h1 class="font-normal text-3xl text-gray leading-none mb-8">Controlled Component</h1>
 
     <div>
-      <form class="card w-1/2 items-center rounded-lg" @submit.prevent="submit">
+      <form class="card md:w-1/2 items-center rounded-lg" @submit.prevent="submit">
         <h1 class="text-2xl font-bold mb-6">Your Settings</h1>
         <label class="block mb-6">
           <span class="form-label mb-2">Email Address</span>
@@ -12,7 +12,16 @@
         <div class="mb-8">
           <span class="form-label mb-2">Newsletter</span>
           <div class="flex justify-between items-center">
-            <p class="mr-4">Send you occasional news and updates.</p>
+            <button
+              type="button"
+              class="text-blue-dark hover:underline"
+              @click="showAnnouncement = true"
+            >
+              Show Announcement Modal
+              <portal to="modals" v-if="showAnnouncement">
+                <announcement-modal :show="showAnnouncement" @close="showAnnouncement = false"></announcement-modal>
+              </portal>
+            </button>
             <toggle-input v-model="receiveNewsletter"></toggle-input>
           </div>
         </div>
@@ -25,16 +34,18 @@
 </template>
 
 <script>
-import ToggleInput from "./ToggleInput.vue";
-
+import ToggleInput from "./utilities/ToggleInput.vue";
+import AnnouncementModal from "./utilities/AnnouncementModal.vue";
 export default {
   components: {
-    ToggleInput
+    ToggleInput,
+    AnnouncementModal
   },
   data() {
     return {
       email: "jane@example.com",
-      receiveNewsletter: false
+      receiveNewsletter: false,
+      showAnnouncement: false
     };
   },
   methods: {

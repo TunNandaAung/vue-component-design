@@ -7,6 +7,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import routes from './routes';
+import PortalVue from 'portal-vue';
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -16,6 +17,7 @@ import routes from './routes';
  */
 window.Vue = Vue;
 Vue.use(VueRouter);
+Vue.use(PortalVue);
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
