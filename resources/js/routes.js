@@ -1,8 +1,9 @@
-import NotFound from './components/NotFound';
-import UserSettingsForm from './components/UserSettingsForm';
-import RenderFunctionCompo from './components/RenderFunctionCompo';
-import DataProvider from './components/DataProvider';
-import RenderlessComponents from './components/RenderlessComponents';
+import NotFound from './components/NotFound'
+import UserSettingsForm from './components/UserSettingsForm'
+import RenderFunctionCompo from './components/RenderFunctionCompo'
+import DataProvider from './components/DataProvider'
+import RenderlessComponents from './components/RenderlessComponents'
+import CompoundComponent from './components/CompoundComponent'
 
 export default {
     mode: 'history',
@@ -35,6 +36,11 @@ export default {
         {
             path: '/home/renderless-components',
             component: RenderlessComponents
+
+        },
+        {
+            path: '/home/compound-component',
+            component: CompoundComponent
 
         },
 

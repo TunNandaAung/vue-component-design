@@ -532,4 +532,9 @@
     padding: 0;
   }
 
+  .rotate-90 {
+    transform: rotate(90deg); /* Equal to rotateZ(45deg) */
+    
+  }
+
 @tailwind utilities;
