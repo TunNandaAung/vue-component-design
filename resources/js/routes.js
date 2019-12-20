@@ -20,33 +20,33 @@ export default {
         },
 
         {
-            path: '/home/controlled-component',
+            path: '/',
             component: UserSettingsForm
 
         },
         {
-            path: '/home/render-function',
+            path: '/render-function',
             component: RenderFunctionCompo
 
         },
         {
-            path: '/home/data-provider',
+            path: '/data-provider',
             component: DataProvider
 
         },
         {
-            path: '/home/renderless-components',
+            path: '/renderless-components',
             component: RenderlessComponents
 
         },
         {
-            path: '/home/compound-components',
+            path: '/compound-components',
             component: CompoundComponents
 
         },
 
         {
-            path: '/home/search-select-component',
+            path: '/search-select-component',
             component: SearchSelectComponent
 
         },

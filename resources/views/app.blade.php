@@ -31,12 +31,12 @@
                             <h5 class="uppercase text-xl font-bold mb-5 text-base">The Components</h5>
                             
                             <ul>
-                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/controlled-component" exact>Controlled Component</router-link></li>
-                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/render-function">Render Function</router-link></li>
-                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/data-provider">Data Provider Component</router-link></li>
-                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/renderless-components">Renderless Components</router-link></li>
-                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/compound-components">Compound Components</router-link></li>
-                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/search-select-component">Search Select Components</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/" exact>Controlled Component</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/render-function">Render Function</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/data-provider">Data Provider Component</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/renderless-components">Renderless Components</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/compound-components">Compound Components</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/search-select-component">Search Select Components</router-link></li>
                                 
                             </ul>
                         </section>

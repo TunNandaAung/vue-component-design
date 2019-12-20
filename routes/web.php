@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/home/{any}', function () {
-    return view('app');
-})->where('any', '.*');
-
-
 Route::get('/api/contact', function () {
     $contacts =
         [
@@ -125,3 +120,9 @@ Route::get('/api/contact', function () {
      
     return response()->json($contacts);
 });
+
+
+Route::get('/{any}', function () {
+   return view('app');
+})->where('any', '.*');
+

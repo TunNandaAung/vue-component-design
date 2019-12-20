@@ -31843,22 +31843,22 @@ __webpack_require__.r(__webpack_exports__);
     path: '*',
     component: _components_NotFound__WEBPACK_IMPORTED_MODULE_0__["default"]
   }, {
-    path: '/home/controlled-component',
+    path: '/',
     component: _components_UserSettingsForm__WEBPACK_IMPORTED_MODULE_1__["default"]
   }, {
-    path: '/home/render-function',
+    path: '/render-function',
     component: _components_RenderFunctionCompo__WEBPACK_IMPORTED_MODULE_2__["default"]
   }, {
-    path: '/home/data-provider',
+    path: '/data-provider',
     component: _components_DataProvider__WEBPACK_IMPORTED_MODULE_3__["default"]
   }, {
-    path: '/home/renderless-components',
+    path: '/renderless-components',
     component: _components_RenderlessComponents__WEBPACK_IMPORTED_MODULE_4__["default"]
   }, {
-    path: '/home/compound-components',
+    path: '/compound-components',
     component: _components_CompoundComponents__WEBPACK_IMPORTED_MODULE_5__["default"]
   }, {
-    path: '/home/search-select-component',
+    path: '/search-select-component',
     component: _components_SearchSelectComponent__WEBPACK_IMPORTED_MODULE_6__["default"]
   }]
 });
