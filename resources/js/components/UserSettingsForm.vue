@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="font-normal text-3xl text-gray leading-none mb-8">Controlled Component</h1>
+    <h1 class="font-normal text-3xl text-gray leading-none mb-8">Controlled Components</h1>
 
     <div>
       <form class="card md:w-1/2 items-center rounded-lg" @submit.prevent="submit">
