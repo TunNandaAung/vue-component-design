@@ -4,6 +4,7 @@ import RenderFunctionCompo from './components/RenderFunctionCompo'
 import DataProvider from './components/DataProvider'
 import RenderlessComponents from './components/RenderlessComponents'
 import CompoundComponents from './components/CompoundComponents'
+import SearchSelectComponent from './components/SearchSelectComponent'
 
 export default {
     mode: 'history',
@@ -44,6 +45,11 @@ export default {
 
         },
 
+        {
+            path: '/home/search-select-component',
+            component: SearchSelectComponent
+
+        },
     ],
 
 

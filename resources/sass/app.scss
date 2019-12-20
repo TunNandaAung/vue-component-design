@@ -2,7 +2,7 @@
 
 @tailwind components;
 
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
   .form-input {
     display: block;
     width: 100%;
@@ -485,7 +485,24 @@
     -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     z-index: 50;
+    
   }
+
+  .search-select-options::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5ff;
+  }
+
+  .search-select-options::-webkit-scrollbar-track {
+    background: #CFD8DC;
+    border-radius: 10px;   
+  }
+  .search-select-options::-webkit-scrollbar-thumb {
+    background-color: #90A4AE ;
+    border-radius: 10px;
+    border: 3px solid #CFD8DC;
+  }
+  
   .search-select-search {
     display: block;
     margin-bottom: 0.5rem;
@@ -536,5 +553,6 @@
     transform: rotate(90deg); /* Equal to rotateZ(45deg) */
     
   }
+  
 
 @tailwind utilities;
