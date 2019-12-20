@@ -36,6 +36,8 @@
 
 <script>
 import OnClickOutside from "./OnClickOutside";
+import Popper from "popper.js";
+
 export default {
   components: {
     OnClickOutside
@@ -58,12 +60,23 @@ export default {
   },
 
   methods: {
+    setupPopper() {
+      if (this.popper === undefined) {
+        this.popper = new Popper(this.$refs.button, this.$refs.dropdown, {
+          placement: "bottom"
+        });
+      } else {
+        this.popper.scheduleUpdate();
+      }
+    },
+
     open() {
       if (this.isOpen) {
         return;
       }
       this.isOpen = true;
       this.$nextTick(() => {
+        this.setupPopper();
         this.$refs.search.focus();
         this.scrollToHighlighted();
       });
