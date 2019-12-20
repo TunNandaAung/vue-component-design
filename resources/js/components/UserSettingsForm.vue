@@ -18,9 +18,7 @@
               @click="showAnnouncement = true"
             >
               Show Announcement Modal
-              <portal to="modals" v-if="showAnnouncement">
-                <announcement-modal :show="showAnnouncement" @close="showAnnouncement = false"></announcement-modal>
-              </portal>
+              <announcement-modal :show="showAnnouncement" @close="showAnnouncement = false"></announcement-modal>
             </button>
             <toggle-input v-model="receiveNewsletter"></toggle-input>
           </div>
