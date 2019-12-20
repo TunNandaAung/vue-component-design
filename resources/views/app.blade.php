@@ -17,26 +17,26 @@
 
               
             <header class="py-8 px-8 mb-8">
-                <h1 class="flex items-center">
+                <h1 class="md:flex items-center">
                     <img alt="Vue" src="/images/logo.svg">
-                    <span class="text-2xl text-bold"> Vue.js</span>
+                    <span class="text-2xl text-bold"> Vue.js <span class="sm:hidden md:inline">-</span> <br class ="md:hidden sm:inline" >Advanced Vue Component Design</span>
                 </h1>
             </header>
 
             <div class="container pb-10">
 
                 <main class="lg:flex">
-                    <aside class="w-64 pt-8">
+                    <aside class="w-128 pt-8">
                         <section class="mb-10 px-8">
-                            <h5 class="uppercase font-bold mb-5 text-base">The Components</h5>
+                            <h5 class="uppercase text-xl font-bold mb-5 text-base">The Components</h5>
                             
                             <ul>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to="/home/controlled-component" exact>Controlled Component</router-link></li>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to="/home/render-function">Render Function</router-link></li>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to="/home/data-provider">Data Provider Component</router-link></li>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to="/home/renderless-components">Renderless Components</router-link></li>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to="/home/compound-components">Compound Components</router-link></li>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to="/home/search-select-component">Search Select Components</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/controlled-component" exact>Controlled Component</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/render-function">Render Function</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/data-provider">Data Provider Component</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/renderless-components">Renderless Components</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/compound-components">Compound Components</router-link></li>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/home/search-select-component">Search Select Components</router-link></li>
                                 
                             </ul>
                         </section>

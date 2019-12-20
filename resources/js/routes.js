@@ -9,7 +9,7 @@ import SearchSelectComponent from './components/SearchSelectComponent'
 export default {
     mode: 'history',
 
-    linkActiveClass: 'font-bold',
+    linkActiveClass: 'link-active',
 
     routes: [
 
