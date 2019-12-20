@@ -8,6 +8,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import routes from './routes';
 import PortalVue from 'portal-vue';
+import axios from 'axios';
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -16,8 +17,10 @@ import PortalVue from 'portal-vue';
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 window.Vue = Vue;
+window.axios = axios;
 Vue.use(VueRouter);
 Vue.use(PortalVue);
+
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 

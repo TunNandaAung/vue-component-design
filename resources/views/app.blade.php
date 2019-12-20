@@ -33,7 +33,7 @@
                             <ul>
                                 <li class="text-sm leading-loose"><router-link class="text-black" to="/home/controlled-component" exact>Controlled Component</router-link></li>
                                 <li class="text-sm leading-loose"><router-link class="text-black" to="/home/render-function">Render Function</router-link></li>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to="/home/colors">Colors</router-link></li>
+                                <li class="text-sm leading-loose"><router-link class="text-black" to="/home/data-provider">Data Provider Component</router-link></li>
                                 <li class="text-sm leading-loose"><router-link class="text-black" to="/home/typography">Typography</router-link></li>
                             </ul>
                         </section>

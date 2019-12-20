@@ -1,7 +1,7 @@
 import NotFound from './components/NotFound';
 import UserSettingsForm from './components/UserSettingsForm';
 import RenderFunctionCompo from './components/RenderFunctionCompo';
-
+import DataProvider from './components/DataProvider';
 
 export default {
     mode: 'history',
@@ -24,6 +24,11 @@ export default {
         {
             path: '/home/render-function',
             component: RenderFunctionCompo
+
+        },
+        {
+            path: '/home/data-provider',
+            component: DataProvider
 
         },
 
