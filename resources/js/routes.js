@@ -3,7 +3,7 @@ import UserSettingsForm from './components/UserSettingsForm'
 import RenderFunctionCompo from './components/RenderFunctionCompo'
 import DataProvider from './components/DataProvider'
 import RenderlessComponents from './components/RenderlessComponents'
-import CompoundComponent from './components/CompoundComponent'
+import CompoundComponents from './components/CompoundComponents'
 
 export default {
     mode: 'history',
@@ -39,8 +39,8 @@ export default {
 
         },
         {
-            path: '/home/compound-component',
-            component: CompoundComponent
+            path: '/home/compound-components',
+            component: CompoundComponents
 
         },
 

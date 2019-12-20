@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "@shopify/draggable": "^1.0.0-beta.8",
         "mix-tailwindcss": "^1.2.0",
         "portal-vue": "^2.1.6",
         "tailwindcss": "^1.1.4",
