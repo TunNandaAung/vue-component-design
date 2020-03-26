@@ -122,7 +122,12 @@ Route::get('/api/contact', function () {
 });
 
 
+Route::get('/home/test', function () {
+   return view('index');
+});
+
 Route::get('/{any}', function () {
    return view('app');
 })->where('any', '.*');
+
 

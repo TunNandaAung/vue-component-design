@@ -13,9 +13,20 @@
         />
       </svg>
     </div>
-    <div class="accordion-item-body" v-show="active">
-      <slot name="content"></slot>
-    </div>
+
+    <transition
+      enter-class="-translate-y-20"
+      enter-active-class="ease-in transition-medium"
+      enter-to-class="translate-y-0"
+      leave-class="translate-y-0"
+      leave-active-class="ease-in transition-medium"
+      leave-to-class="-translate-y-20"
+      appear
+    >
+      <div class="accordion-item-body" v-show="active">
+        <slot name="content"></slot>
+      </div>
+    </transition>
   </div>
 </template>
 

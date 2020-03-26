@@ -40,6 +40,15 @@
                                 
                             </ul>
                         </section>
+
+                        <section class="mb-10 px-8">
+                            <h5 class="uppercase text-xl font-bold mb-5 text-base">Tailwind UI</h5>
+                            
+                            <ul>
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/blog-section">Blog Section</router-link></li>
+                                
+                            </ul>
+                        </section>
                         
                         
 

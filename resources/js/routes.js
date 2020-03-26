@@ -5,6 +5,7 @@ import DataProvider from './components/DataProvider'
 import RenderlessComponents from './components/RenderlessComponents'
 import CompoundComponents from './components/CompoundComponents'
 import SearchSelectComponent from './components/SearchSelectComponent'
+import BlogSection from './components/BlogSection'
 
 export default {
     mode: 'history',
@@ -50,6 +51,14 @@ export default {
             component: SearchSelectComponent
 
         },
+
+
+        {
+            path: '/blog-section',
+            component: BlogSection
+        },
+
+
     ],
 
 
