@@ -6,6 +6,7 @@ import RenderlessComponents from './components/RenderlessComponents'
 import CompoundComponents from './components/CompoundComponents'
 import SearchSelectComponent from './components/SearchSelectComponent'
 import BlogSection from './components/BlogSection'
+import TuplePricing from './components/TuplePricing'
 
 export default {
     mode: 'history',
@@ -56,6 +57,10 @@ export default {
         {
             path: '/blog-section',
             component: BlogSection
+        },
+        {
+            path: '/tuple-pricing',
+            component: TuplePricing
         },
 
 

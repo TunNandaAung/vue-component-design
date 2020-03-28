@@ -46,7 +46,7 @@
                             
                             <ul>
                                 <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/blog-section">Blog Section</router-link></li>
-                                
+                                <li class="text-lg mt-4 leading-loose"><router-link class="text-black" to="/tuple-pricing">Tuple Pricing</router-link></li>
                             </ul>
                         </section>
                         
