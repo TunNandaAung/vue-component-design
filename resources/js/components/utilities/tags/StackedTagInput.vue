@@ -12,7 +12,7 @@
         <input class="form-input" placeholder="Add tag..." v-bind="inputProps" v-on="inputEvents" />
         <button class="btn btn-indigo" @click="addTag">Add Tag</button>
       </div>
-      <ul class="stacked-tag-list">
+      <transition-group tag="ul" name="slide-up" class="stacked-tag-list" appear>
         <li v-for="tag in tags" :key="tag">
           {{ tag }}
           <button
@@ -21,7 +21,7 @@
             v-on="removeButtonEvents(tag)"
           >Remove</button>
         </li>
-      </ul>
+      </transition-group>
     </div>
   </renderless-tag-input>
 </template>
@@ -46,3 +46,20 @@ export default {
   methods: {}
 };
 </script>
+
+<style>
+.slide-up-enter {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.2s ease;
+}
+
+.slide-up-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+</style>
