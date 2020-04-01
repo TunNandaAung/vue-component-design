@@ -57,7 +57,10 @@
                 
                 <div class="primary flex-1 px-8">
 
-                    <router-view></router-view>
+                    <page-transition>
+                        <router-view></router-view>
+                    </page-transition>
+                    
                     <portal-target name="modals"></portal-target>
   
                 </div>

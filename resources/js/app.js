@@ -10,6 +10,7 @@ import routes from './routes';
 import PortalVue from 'portal-vue';
 import axios from 'axios';
 import NavDrawer from './components/NavDrawer'
+import PageTransition from './components/PageTransition'
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -34,6 +35,7 @@ Vue.component('nav-drawer', NavDrawer);
 
 const app = new Vue({
     el: '#app',
+    components: { PageTransition },
 
     router: new VueRouter(routes)
 });
