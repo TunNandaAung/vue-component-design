@@ -4,13 +4,13 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import routes from './routes';
-import PortalVue from 'portal-vue';
-import axios from 'axios';
-import NavDrawer from './components/NavDrawer'
-import PageTransition from './components/PageTransition'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import routes from "./routes";
+import PortalVue from "portal-vue";
+import axios from "axios";
+import NavDrawer from "./components/NavDrawer";
+import PageTransition from "./components/PageTransition";
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -25,7 +25,7 @@ Vue.use(PortalVue);
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-Vue.component('nav-drawer', NavDrawer);
+Vue.component("nav-drawer", NavDrawer);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -34,8 +34,8 @@ Vue.component('nav-drawer', NavDrawer);
  */
 
 const app = new Vue({
-    el: '#app',
-    components: { PageTransition },
+    el: "#app",
+    components: { PageTransition, NavDrawer },
 
     router: new VueRouter(routes)
 });

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col max-w-sm bg-white rounded-lg shadow-lg">
+  <div class="flex flex-col md:max-w-sm bg-white rounded-lg shadow-lg">
     <header class="flex justify-between items-center px-4 py-6">
       <div>
         <img src="/images/laracasts-logo.svg" alt="Laracasts" />

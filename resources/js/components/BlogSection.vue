@@ -9,7 +9,7 @@
     </div>
 
     <!--Card1-->
-    <div class="mt-12 w-1/2 flex flex-col justify-center">
+    <div class="mt-12 md:w-1/2 flex flex-col justify-center">
       <div class="rounded-lg shadow-lg overflow-hidden">
         <div>
           <img
@@ -54,7 +54,7 @@
     </div>
 
     <!--Card2-->
-    <div class="mt-12 w-1/2 flex flex-col justify-center">
+    <div class="mt-12 md:w-1/2 flex flex-col justify-center">
       <div class="rounded-lg shadow-lg overflow-hidden">
         <div>
           <img
@@ -99,7 +99,7 @@
     </div>
 
     <!--Card3-->
-    <div class="mt-12 w-1/2 flex flex-col justify-center">
+    <div class="mt-12 md:w-1/2 flex flex-col justify-center">
       <div class="rounded-lg shadow-lg overflow-hidden">
         <div>
           <img
