@@ -1256,14 +1256,14 @@ video {
 }
 
 .search-select-options::-webkit-scrollbar-track {
-  background: #CFD8DC;
+  background: #cfd8dc;
   border-radius: 10px;
 }
 
 .search-select-options::-webkit-scrollbar-thumb {
-  background-color: #90A4AE;
+  background-color: #90a4ae;
   border-radius: 10px;
-  border: 3px solid #CFD8DC;
+  border: 3px solid #cfd8dc;
 }
 
 .search-select-search {
@@ -1344,6 +1344,31 @@ video {
 .link-active {
   font-weight: 700;
   text-decoration: underline;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background: #edf2f7;
+  border-left: 1px solid #edf2f7;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3e474b;
+  border-radius: 10px;
+}
+
+.inset-100 {
+  bottom: 0%;
+}
+
+.is-fixed-to-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .sr-only {

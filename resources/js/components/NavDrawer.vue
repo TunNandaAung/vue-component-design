@@ -1,10 +1,12 @@
 <template>
   <div>
-    <div id="nav" class="bg-white md:bg-transparent shadow md:shadow-none mb-6 md:mb-0">
-      <div class="md:px-8">
+    <div ref="nav" class="mb-24 md:mb-0">
+      <div
+        class="md:px-8 fixed md:relative bg-white w-full top-0 bg-white md:bg-transparent shadow md:shadow-none"
+      >
         <nav class="relative flex flex-wrap items-center justify-between md:py-4">
-          <div class="relative z-10 flex-shrink-0 pl-4 py-4 md:hidden">
-            <img class="py-2" src="/images/logo.svg" />
+          <div class="relative z-10 flex-shrink-0 pl-4 py-2 md:hidden">
+            <img src="/images/logo.svg" />
           </div>
 
           <h3 class="text-xl font-normal md:hidden">Advanced Vue Component Design</h3>
@@ -183,12 +185,32 @@
 </template>
 
 <script>
+import { throttle } from "lodash";
+
 export default {
   data() {
     return {
-      isOpen: false
+      isOpen: false,
+      isVisible: false
     };
   },
+  //   mounted() {
+  //     let navBar = this.$refs["nav"];
+  //     let originalOffsetTop = navBar.offsetTop;
+
+  //     window.addEventListener(
+  //       "scroll",
+  //       throttle(
+  //         function() {
+  //           if (window.scrollY >= originalOffsetTop) {
+  //             navBar.classList.add("is-fixed-to-top");
+  //           } else navBar.classList.remove("is-fixed-to-top");
+  //         },
+  //         { passive: true }
+  //       ),
+  //       300
+  //     );
+  //   },
   methods: {
     open() {
       this.isOpen = true;
