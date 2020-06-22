@@ -1,71 +1,62 @@
-import NotFound from './components/NotFound'
-import UserSettingsForm from './components/UserSettingsForm'
-import RenderFunctionCompo from './components/RenderFunctionCompo'
-import DataProvider from './components/DataProvider'
-import RenderlessComponents from './components/RenderlessComponents'
-import CompoundComponents from './components/CompoundComponents'
-import SearchSelectComponent from './components/SearchSelectComponent'
-import BlogSection from './components/BlogSection'
-import TuplePricing from './components/TuplePricing'
+import NotFound from "./components/NotFound";
+import UserSettingsForm from "./components/UserSettingsForm";
+import RenderFunctionCompo from "./components/RenderFunctionCompo";
+import DataProvider from "./components/DataProvider";
+import RenderlessComponents from "./components/RenderlessComponents";
+import CompoundComponents from "./components/CompoundComponents";
+import SearchSelectComponent from "./components/SearchSelectComponent";
+import BlogSection from "./components/BlogSection";
+import TuplePricing from "./components/TuplePricing";
+import FanOut from "./components/FanOut";
 
 export default {
-    mode: 'history',
+    mode: "history",
 
-    linkActiveClass: 'link-active',
+    linkActiveClass: "link-active",
 
     routes: [
-
         {
-            path: '*',
+            path: "*",
             component: NotFound
-
         },
 
         {
-            path: '/',
+            path: "/",
             component: UserSettingsForm
-
         },
         {
-            path: '/render-function',
+            path: "/render-function",
             component: RenderFunctionCompo
-
         },
         {
-            path: '/data-provider',
+            path: "/data-provider",
             component: DataProvider
-
         },
         {
-            path: '/renderless-components',
+            path: "/renderless-components",
             component: RenderlessComponents
-
         },
         {
-            path: '/compound-components',
+            path: "/compound-components",
             component: CompoundComponents
-
         },
 
         {
-            path: '/search-select-component',
+            path: "/search-select-component",
             component: SearchSelectComponent
-
         },
 
-
         {
-            path: '/blog-section',
+            path: "/blog-section",
             component: BlogSection
         },
         {
-            path: '/tuple-pricing',
+            path: "/tuple-pricing",
             component: TuplePricing
         },
-
-
-    ],
-
-
-
-}
+        {
+            path: "/fan-out-transition",
+            component: FanOut
+        }
+    ]
+};
