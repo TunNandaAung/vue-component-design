@@ -2,20 +2,22 @@
     <div>
         <div ref="nav" class="mb-24 md:mb-0">
             <div
-                class="md:px-8 fixed md:relative bg-white w-full top-0 bg-white md:bg-transparent shadow md:shadow-none"
+                class="md:px-8 fixed md:relative bg-white w-full top-0 md:bg-transparent shadow md:shadow-none"
             >
                 <nav
                     class="relative flex flex-wrap items-center justify-between md:py-4"
                 >
                     <div
-                        class="relative z-10 flex-shrink-0 pl-4 py-2 md:hidden"
+                        class="relative z-10 flex-shrink-0 sm:pl-4 pl-1 py-2 md:hidden"
                     >
                         <img src="/images/logo.svg" />
                     </div>
 
-                    <h3 class="text-xl font-normal md:hidden">
-                        Advanced Vue Component Design
+                    <h3 class="text-lg sm:text-xl font-normal md:hidden">
+                        Advanced Vue Component
+                        <span class="hidden sm:block">Design</span>
                     </h3>
+
                     <div class="flex-shrink-0 pr-4 md:hidden">
                         <button
                             ref="openButton"
@@ -44,9 +46,7 @@
 
                     <aside class="w-128 pt-8 hidden md:block md:bg-transparent">
                         <section class="mb-10 px-8">
-                            <h5
-                                class="uppercase text-xl font-bold mb-5 text-base"
-                            >
+                            <h5 class="uppercase text-xl font-bold mb-5">
                                 The Components
                             </h5>
 
@@ -95,9 +95,7 @@
                         </section>
 
                         <section class="mb-10 px-8">
-                            <h5
-                                class="uppercase text-xl font-bold mb-5 text-base"
-                            >
+                            <h5 class="uppercase text-xl font-bold mb-5">
                                 Tailwind UI
                             </h5>
 
