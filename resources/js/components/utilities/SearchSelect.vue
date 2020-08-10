@@ -40,7 +40,7 @@ import Popper from "popper.js";
 
 export default {
   components: {
-    OnClickOutside
+    OnClickOutside,
   },
 
   props: ["value", "options", "filterFunction"],
@@ -49,21 +49,21 @@ export default {
     return {
       isOpen: false,
       search: "",
-      highlightedIndex: 0
+      highlightedIndex: 0,
     };
   },
 
   computed: {
     filteredOptions() {
       return this.filterFunction(this.search, this.options);
-    }
+    },
   },
 
   methods: {
     setupPopper() {
       if (this.popper === undefined) {
         this.popper = new Popper(this.$refs.button, this.$refs.dropdown, {
-          placement: "bottom"
+          placement: "bottom",
         });
       } else {
         this.popper.scheduleUpdate();
@@ -99,7 +99,7 @@ export default {
 
     scrollToHighlighted() {
       this.$refs.options.children[this.highlightedIndex].scrollIntoView({
-        block: "nearest"
+        block: "nearest",
       });
     },
 
@@ -123,7 +123,7 @@ export default {
 
     highlightNext() {
       this.highlight(this.highlightedIndex + 1);
-    }
-  }
+    },
+  },
 };
 </script>

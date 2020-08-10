@@ -37,22 +37,22 @@ import AnnouncementModal from "./utilities/AnnouncementModal.vue";
 export default {
   components: {
     ToggleInput,
-    AnnouncementModal
+    AnnouncementModal,
   },
   data() {
     return {
       email: "jane@example.com",
       receiveNewsletter: false,
-      showAnnouncement: false
+      showAnnouncement: false,
     };
   },
   methods: {
     submit() {
       console.log("Submitting preferences...", {
         email: this.email,
-        receiveNewsletter: this.receiveNewsletter
+        receiveNewsletter: this.receiveNewsletter,
       });
-    }
-  }
+    },
+  },
 };
 </script>
