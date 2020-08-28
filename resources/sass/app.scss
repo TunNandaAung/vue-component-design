@@ -594,4 +594,8 @@ body {
     @apply fixed top-0 w-full;
 }
 
+.max-h-0 {
+    max-height: 0;
+}
+
 @tailwind utilities;

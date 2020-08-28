@@ -8,15 +8,15 @@
 export default {
   provide() {
     return {
-      accordionListState: this.sharedState
+      accordionListState: this.sharedState,
     };
   },
   data() {
     return {
       sharedState: {
-        activeItem: 1
-      }
+        activeItem: 1,
+      },
     };
-  }
+  },
 };
 </script>

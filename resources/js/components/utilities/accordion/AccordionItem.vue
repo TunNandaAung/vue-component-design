@@ -1,10 +1,10 @@
 <template>
-  <div class="accordion-item">
+  <div class="accordion-item relative">
     <div @click="toggle" role="button" class="accordion-item-header">
       <slot name="header"></slot>
       <svg
-        class="icon"
-        :class="{ 'rotate-90': active }"
+        class="icon transition-transform duration-700"
+        :class="{ 'rotate-270': active }"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
       >
@@ -14,19 +14,15 @@
       </svg>
     </div>
 
-    <transition
-      enter-class="-translate-y-20"
-      enter-active-class="ease-in transition-medium"
-      enter-to-class="translate-y-0"
-      leave-class="translate-y-0"
-      leave-active-class="ease-in transition-medium"
-      leave-to-class="-translate-y-20"
-      appear
+    <div
+      class="relative overflow-hidden transition-all max-h-0 duration-700"
+      :ref="itemId"
+      :style="active ? 'max-height: ' + $refs[itemId].scrollHeight + 'px' : ''"
     >
-      <div class="accordion-item-body" v-show="active">
+      <div class="p-6">
         <slot name="content"></slot>
       </div>
-    </transition>
+    </div>
   </div>
 </template>
 
@@ -37,12 +33,15 @@ export default {
   computed: {
     active() {
       return this.accordionListState.activeItem === this.itemId;
-    }
+    },
+    itemRef() {
+      return this.$refs[this.itemId];
+    },
   },
   methods: {
     toggle() {
       this.accordionListState.activeItem = this.active ? null : this.itemId;
-    }
-  }
+    },
+  },
 };
 </script>
